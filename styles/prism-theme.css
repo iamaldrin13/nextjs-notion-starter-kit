@@ -3,14 +3,16 @@
 .notion-code {
   background-color: rgba(249, 250, 251, 1);
   border: 1px solid rgba(229, 231, 235, 1);
-  border-radius: 0.375rem;
+  border-radius: 0.5rem;
   padding: 1.5em !important;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .dark-mode .notion-code {
-  background-color: rgba(17, 24, 39, 1);
-  border-color: rgba(55, 65, 81, 1);
+  background-color: #111111;
+  border-color: #2a2a2a;
 }
+
 .notion code {
   color: rgba(31, 41, 55, 1);
   border: 0 none !important;
@@ -23,9 +25,10 @@
 }
 
 .dark-mode .notion .notion-inline-code {
-  background: rgb(71, 76, 80) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
   color: #ff4081;
   padding: 0.2em 0.4em !important;
+  border-radius: 0.3em;
 }
 
 .notion .notion-inline-code {
@@ -97,7 +100,8 @@ pre[class*='language-'] {
 }
 .dark-mode code[class*='language-'],
 .dark-mode pre[class*='language-'] {
-  color: rgba(249, 250, 251, 1);
+  color: #e4e4e4;
+  text-shadow: none;
 }
 pre::-webkit-scrollbar {
   display: none;
